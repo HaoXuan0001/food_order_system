@@ -4,13 +4,34 @@ public class bmi_calculator {
         Scanner input = new Scanner(System.in);
         System.out.println("Masukkan nama: ");
         String Nama = input.next();
-        
+
+        int Berat;
+
+        while (true) {
         System.out.println("Masukkan Berat: ");
-        int Berat = input.nextInt();
+        //int Berat = input.nextInt();
+        if (input.hasNextInt()) {
+            Berat = input.nextInt();
+            break;    
+        } else {
+            System.out.println("Invalid value");
+            input.nextLine();
+        }
+    }
+        float Tinggi;
 
+        while (true) {
         System.out.println("Masukkan Tinggi dalam meter: ");
-        float Tinggi = input.nextFloat();
-
+        //float Tinggi = input.nextFloat();
+        if (input.hasNextFloat()) {
+            Tinggi = input.nextFloat();
+            break;
+        } else {
+            System.out.println("Invalid value");
+            input.nextLine();
+        }
+    }
+        
         double bmi = Berat / (Tinggi * Tinggi);
         
         if (bmi <= 20.6) {
