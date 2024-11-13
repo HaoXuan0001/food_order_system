@@ -23,7 +23,7 @@ header("Location: produk_pilih.php");
 </div>
 <!-- PILIHAN DIBUAT --> 
 <?php
-if (isset($_POST[ 'hantar'])) {
+if (isset($_POST['hantar'])) {
 
 $_SESSION['cara']=$_POST['cara'];
 #JIKA PILIHAN DINE-IN

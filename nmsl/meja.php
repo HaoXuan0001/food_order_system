@@ -22,7 +22,7 @@
 <?php
 $sno=1;
 $meja=mysqli_query($con, "SELECT * FROM meja");
-while($datal = mysqli_fetch_assoc($meja)){
+while($data1 = mysqli_fetch_assoc($meja)){
 ?>
 <tr>
 <td><?php echo $sno; ?></td>
