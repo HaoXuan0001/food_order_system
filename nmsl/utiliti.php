@@ -30,7 +30,7 @@ document.getElementById("isi").style.transform =
 });
 document.getElementById("zoomOut") .addEventListener
 ("click", function() {
-if (zoom › zoomStep) { 
+if (zoom > zoomStep) { 
 zoom -= zoomStep;
 document.getElementById("isi").style.transform =
 "scale(" + zoom + ")";
