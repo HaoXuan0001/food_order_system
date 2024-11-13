@@ -18,4 +18,4 @@ placeholder="******" size="11%" minLength="4" maxLength="4" re-quired />
 <br>
 <h3>DAFTAR BARU</h3>
 <p class="detail">Sila daftar sebagai pelanggan baru jika masih tidak mempunyai akaun</p>
-<a href="signup-php"><button>SIGN UP</button><a>
+<a href="signup.php"><button>SIGN UP</button><a>
