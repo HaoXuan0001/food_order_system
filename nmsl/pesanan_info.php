@@ -62,7 +62,7 @@ $total += $subtotal;
 <td><?php echo $data2['namaProduk']; ?></td>
 <td><?php echo $data2['kuantiti']; ?></td>
 <td><?php echo $data2['harga']; ?></td>
-<td>RM<?php $jum1 = $subtotal; echo number_format(#jum1, 2); ?>
+<td>RM<?php $jum1 = $subtotal; echo number_format($jum1, 2); ?>
 </td>
 </tr>
 <?php

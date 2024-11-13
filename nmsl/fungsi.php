@@ -3,7 +3,7 @@
 function semuaProduk($con) {
     $sql = "SELEC * FROM produk";
     $result = mysqli_query($con, $sql);
-    return $result
+    return $result;
 }
 
 #MEMANGGIL PRODUK BERDASARKAN ID PRODUK

@@ -1,5 +1,5 @@
 <?php
-include 'database.php'
+include 'database.php';
 #DAPATKAN URL
 $bil = $_GET['id'];
 #PROSES KEMASKINI

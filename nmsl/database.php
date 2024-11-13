@@ -14,8 +14,8 @@ $password="";
 #CONNECT DATABASE
 $con = mysqli_connect($host,$user,$password,$db);
 #OUTPUT MESSAGE IF CONNECTION FAILED
-if (!con) {
-    die("Database tidak berhubung!:". mysqli_connect_error())
+if (!$con) {
+    die("Database tidak berhubung!:". mysqli_connect_error());
 }
 
 #BOLEH UBAH DI SINI
