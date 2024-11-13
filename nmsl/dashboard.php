@@ -13,7 +13,7 @@ $_SESSION['cart'] = [];
 <div class="row" >
 <!-- PANGGIL MENU --> 
 <div id="menu" >
-<?php include 'menu. php'; ?> 
+<?php include 'menu.php'; ?> 
 </div>
 
 <!-- RUANGAN PELANGGAN --> 
