@@ -10,7 +10,7 @@ $NAMA = $_POST['nama'];
 $PW=(substr($HP,0,4));
 #SEMAK DULU REKOD SEDIA ADA
 $semakan=mysqli_query($con,"SELECT * FROM pelanggan WHERE
-nomHp='$НР'");
+nomHp='$HP'");
 
 #LAKSANA ATURCARA
 $detail=mysqli_num_rows($semakan);
