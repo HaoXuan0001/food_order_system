@@ -1,7 +1,7 @@
 #MEMANGGIL SEMUA JENIS PROIDUK
 <?php
 function semuaProduk($con) {
-    $sql = "SELEC * FROM produk";
+    $sql = "SELECT * FROM produk";
     $result = mysqli_query($con, $sql);
     return $result;
 }
