@@ -6,7 +6,7 @@ if ($_SESSION['level']=="ADMIN" ){
 <!-- ARAS LOGIN - ADMIN-->
 <h4>MENU PENTADBIR</h4>
 <ul>
-<lisa href="dashboard.php">HOME</a></li>
+<li><a href="dashboard.php">HOME</a></li>
 <li><a href="senarai_pesanan.php">SENARAI PESANAN</a></1i>
 <li><a href="produk.php">PRODUK</a></li>
 <li><a href="meja.php">MEJA</a></li>
