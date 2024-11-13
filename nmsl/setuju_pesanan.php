@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $sqlPesanan = "INSERT INTO pesanan (tarikh, status, nomHp,
 noMeja, cara)
 VALUES (?, ?, ?, ?, ?)";
-$stmtPesanan = mysqli_prepare($conn, $sqlPesanan);
+$stmtPesanan = mysqli_prepare($con, $sqlPesanan);
 mysqli_stmt_bind_param($stmtPesanan, "sssss", $tarikh, $status,
 $nomHp, $meja, $cara);
 mysqli_stmt_execute($stmtPesanan);

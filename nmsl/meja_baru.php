@@ -22,7 +22,7 @@
 <?php
 #TERIMA NILAI YG DI POST
 if (isset($_POST['simpan'])) {
-$datal = $_POST['nomeja'];
+$data1 = $_POST['nomeja'];
 $data2 = $_POST['keterangan'];
 #PROSES SIMPAN
 mysqli_query($con, "INSERT INTO meja VALUES 

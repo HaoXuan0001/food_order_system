@@ -29,7 +29,7 @@ value="<?php echo $meja['info'];?>">
 </div>
 <?php
 #TERIMA NILAI YG DI POST
-if (isset($_POST[' simpan'])) {
+if (isset($_POST['simpan'])) {
 $data1 = $_POST['nomeja'];
 $data2 = $_POST['keterangan'];
 #PROSES KEMASKINI

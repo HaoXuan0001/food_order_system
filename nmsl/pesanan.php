@@ -11,7 +11,7 @@
         $sno =1;
         $sql = "SELECT * FROM pesanan WHERE nomHp='$_SESSION[user]'
         ORDER BY tarikh DESC";
-        $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($con, $sql);
         $semak=mysqli_fetch_array($result);
         if (!empty($semak)) {
             ?>

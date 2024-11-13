@@ -27,7 +27,7 @@ $produk = semuaProduk($con);
 <tbody> 
 <?php
 $sno=1;
-while($datal = mysqli_fetch_assoc($produk)){
+while($data1 = mysqli_fetch_assoc($produk)){
 ?>
 <tr>
 <td><?php echo $sno; ?></td>

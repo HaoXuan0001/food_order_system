@@ -24,7 +24,7 @@ $bil = 1;
 <?php
 foreach ($_SESSION['cart'] as $idProduk => $qty){
     $produk = lihatProduk($con, $idProduk);
-    $totalPrice = lihatProduk($con, $idProduk);
+    $totalPrice += ($produk['harga'] * $qty);
     $totalAmount += $qty;
 ?>
 <tr>

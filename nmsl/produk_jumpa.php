@@ -19,8 +19,8 @@ if($jumpa==NULL){
   </div class="wrapper">
   <?php
   $hasil = ("SELECT * FROM produk
-  WHERE nama Produk LIKE '%$jumpa%'
-  ORDER BY nameProduk ASC");
+  WHERE namaProduk LIKE '%$jumpa%'
+  ORDER BY namaProduk ASC");
   $papar_query = mysqli_query($con, $hasil);
   if(mysqli_num_rows($papar_query) > 0){
     foreach($papar_query as $row){
@@ -28,7 +28,7 @@ if($jumpa==NULL){
         <div class="product-card">
             <img src="gambar/<?php echo $row['gambar']; ?>"
             class="product-image">
-            <h4><?php echo $row['nameProduk']; ?></h4>
+            <h4><?php echo $row['namaProduk']; ?></h4>
             <p class="price">RM<?php echo $row['detail']; ?></p>
             <p class="price">RM<?php echo $row['harga']; ?></p>
             <form action="masuk_bakul.php" method="post">
