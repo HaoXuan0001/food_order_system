@@ -1,4 +1,3 @@
-#MEMANGGIL SEMUA JENIS PROIDUK
 <?php
 function semuaProduk($con) {
     $sql = "SELECT * FROM produk";
