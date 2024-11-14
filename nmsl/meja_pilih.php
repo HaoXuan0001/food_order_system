@@ -17,7 +17,7 @@ header ("location:produk_pilih.php");
 <hr>
 <div class="wrapper">
 <?php
-$meja=mysqli_query($con,"SELECT * FROM meja");
+$meja=mysqli_query($con,"SELECT * FROM meja WHERE noMeja !='TA'");
 while($row = mysqli_fetch_assoc ($meja)){
 ?>
 <div class="product-card">

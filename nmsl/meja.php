@@ -21,7 +21,7 @@
 <tbody>
 <?php
 $sno=1;
-$meja=mysqli_query($con, "SELECT * FROM meja");
+$meja=mysqli_query($con, "SELECT * FROM meja WHERE noMeja !='TA'");
 while($data1 = mysqli_fetch_assoc($meja)){
 ?>
 <tr>

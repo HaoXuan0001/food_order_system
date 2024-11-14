@@ -12,9 +12,12 @@ $sqlPesanan = "INSERT INTO pesanan (tarikh, status, nomHp,
 noMeja, cara)
 VALUES (?, ?, ?, ?, ?)";
 $stmtPesanan = mysqli_prepare($con, $sqlPesanan);
+
 mysqli_stmt_bind_param($stmtPesanan, "sssss", $tarikh, $status,
 $nomHp, $meja, $cara);
+
 mysqli_stmt_execute($stmtPesanan);
+
 $bil = mysqli_insert_id($con);
 mysqli_stmt_close($stmtPesanan);
 #TAMBAH REKOD KE TABLE BELIAN
