@@ -5,9 +5,9 @@ require 'database.php';
 #GET URL
 $bil = $_GET['id'];
 $no = $_GET['no'];
-mysqli_query($conn,"DELETE FROM pesanan 
+mysqli_query($con,"DELETE FROM pesanan 
 WHERE bil='$bil'");
-mysqli_query($conn,"UPDATE meja
+mysqli_query($con,"UPDATE meja
 SET info=info, tersedia = 'Y'
 WHERE noMeja='$no'");
 #RESET SESSION

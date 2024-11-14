@@ -11,8 +11,8 @@
         $sno =1;
         $sql = "SELECT * FROM pesanan WHERE nomHp='$_SESSION[user]'
         ORDER BY tarikh DESC";
-        $result = mysqli_query($con, $sql);
-        $semak=mysqli_fetch_array($result);
+        $result = mysqli_query($con,$sql);
+        $semak=mysqli_num_rows($result);
         if (!empty($semak)) {
             ?>
             <table>
@@ -34,9 +34,9 @@
                         <td><?php echo $data1['status']; ?></td>
                         <td>
                             <?php $status= $data1['status'];
-                            if ($status== 'PENDING') {
+                            if ($status== "PENDING") {
                                 ?>
-                                <a href="hapus_pesanan.php?id=<a?php echo $data1['bil'];?>">
+                                <a href="hapus_pesanan.php?id=<?php echo $data1['bil'];?>">
                                     <button>Batal</button></a>
                                 <a href="pesanan_info.php?id=<?php echo $data1['bil'];?>">
                                     <button>Belian</button></a>

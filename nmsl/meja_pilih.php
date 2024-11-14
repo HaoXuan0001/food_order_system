@@ -1,6 +1,6 @@
 <?php
 #PAPAR HEADER
-include 'header-php';
+include 'header.php';
 #MEJA DIPILIH
 if (isset($_POST['semak'])) {
 $_SESSION['meja']=$_POST['meja'];

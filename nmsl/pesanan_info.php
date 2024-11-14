@@ -1,5 +1,5 @@
 <?php
-include 'header-php';
+include 'header.php';
 #DAPATKAN URL
 $bil = $_GET['id'];
 #PANGGIL MAKLUMAT PELANGGAN & PESANAN
@@ -8,7 +8,7 @@ $pelanggan = mysqli_query($con,
 INNER JOIN pelanggan AS t2
 ON t1.nomHp=t2.nomHp
 WHERE t1.bil='$bil'");
-$datal=mysqli_fetch_array ($pelanggan);
+$data1=mysqli_fetch_array ($pelanggan);
 $status1=$data1['status'];
 $status2=$_SESSION['level'];
 ?>
@@ -27,7 +27,7 @@ $status2=$_SESSION['level'];
 $sno =1;
 $total = 0;
 echo "NAMA PELANGGAN : ".$data1['nama']."(".$data1['nomHp'].")
-‹br>";
+<br>";
 echo "NOMBOR MEJA: ".$data1['noMeja']."<br>";
 echo "PILIHAN: ".$data1['cara'];
 echo "<hr>";

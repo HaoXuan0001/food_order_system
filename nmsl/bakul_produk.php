@@ -70,7 +70,7 @@ foreach ($_SESSION['cart'] as $idProduk => $qty){
 <!-- BUTANG SETUJU BUAT PESANAN -->
 <form action="setuju_pesanan.php" method="post">
     <input type="hidden" name="nomHp"
-    value="</php echo ($_SESSION['user']);?>">
+    value="<?php echo ($_SESSION['user']);?>">
     <hr>
     <button type="submit">Pesan Sekarang</button>
 </form>

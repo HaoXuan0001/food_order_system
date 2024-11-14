@@ -20,7 +20,7 @@ Pilih Status Pesanan
 <noscript><input type="submit" value="Submit"/></noscript>
 </form>
 <?php
-if (isset($_POST['status '])) {
+if (isset($_POST['status'])) {
 $status=$_POST['status'];
 $sno =1;
 $sql = "SELECT * FROM pesanan AS t1

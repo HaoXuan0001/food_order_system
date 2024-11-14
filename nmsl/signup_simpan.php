@@ -19,8 +19,8 @@ $detail=mysqli_num_rows($semakan);
 if ($detail ==0){
 mysqli_query($con,"INSERT INTO pelanggan
 VALUE ('$HP','$PW','$NAMA','PENGGUNA')") ;
-echo "<script>alert('Pendaftaran berjaya \\n Login anda: $HP \\n Katalaluan adalah: $PW'):
-window.location='index. php'</script>";
+echo "<script>alert('Pendaftaran berjaya \\nLogin anda: $HP \\nKatalaluan adalah: $PW');
+window.location='index.php'</script>";
 
 }else{
 echo "<script>alert('Pendaftaran gagal, Nombor HP anda sudah
