@@ -76,15 +76,15 @@ justify-content :left;
 flex-wrap: wrap;
 }
 /*UNTUK KAD PRODUK */
-.product-card { 
-border: 1px solid; 
-border-radius: 2px;
-width: 200px; 
-margin: 5px; 
-padding: 10px;
-background-color: #fff; 
-text-align: center;
-}
+.product-card {
+    border: 1px solid;
+    border-radius: 2px;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    }
 
 /*UNTUK SAIZ IME] */
 .product-image {

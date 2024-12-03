@@ -5,7 +5,7 @@ session_start();
 require 'database.php';
 ?>
 <!-- UNTUK REPONSIVE PAGE -->
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- PANGGIL CSS EXTERNAL -->
 <link rel="icon" type="image/png" href="imej/favicon.ico" />

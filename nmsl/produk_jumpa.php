@@ -15,8 +15,8 @@ if($jumpa==NULL){
  </div>
  <!-- PANGGIL ISI -->
   <div id="isi">
-    <h2 style="text-align: center">HASIL CARIAN</h2>
-  </div class="wrapper">
+    <h2 style="text-align:center">HASIL CARIAN</h2>
+  <div class="wrapper">
   <?php
   $hasil = ("SELECT * FROM produk
   WHERE namaProduk LIKE '%$jumpa%'
