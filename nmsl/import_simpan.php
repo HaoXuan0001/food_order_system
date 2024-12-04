@@ -1,5 +1,5 @@
 <?php
-require 'database. php';
+require 'database.php';
 #TERIMA FAIL CSV POST
 if(isset($_POST["import"])){
 if(!empty($_FILES['file']['name'])){
