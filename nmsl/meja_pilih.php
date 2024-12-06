@@ -26,7 +26,7 @@ while($row = mysqli_fetch_assoc ($meja)){
 <?php
 if ($row['tersedia']=="Y"){
 ?>
-<form method="post" >
+<form method="post">
 <input type="hidden" name="meja"
 value="<?php echo $row['noMeja']; ?>">
 <button name="semak" type="submit">PILIH</button>

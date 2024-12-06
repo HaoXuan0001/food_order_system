@@ -1,7 +1,7 @@
 <h3>LOG MASUK</h3>
 <p class="detail">Untuk ruangan pelanggan sedia ada</p> 
 <form method="post" action="signin_semak.php">
-Nomborr HP:<br>
+Nombor HP:<br>
 <input type="text"
 name="user" placeholder="TAIP DI SINI" size="11%" 
 minLength="10" maxLength="11"

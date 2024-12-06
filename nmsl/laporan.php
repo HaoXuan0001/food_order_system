@@ -29,7 +29,7 @@ echo "<option value='$pilihBulan[month]' >$pilihBulan[month]
 </form>
 </center>
 <?php
-if (isset($_POST[ 'hantar'])) {
+if (isset($_POST['hantar'])) {
 $bulan=$_POST['bulan'];
 $sno =1;
 $total = 0;
@@ -43,7 +43,7 @@ WHERE MONTH(tarikh)='$bulan' AND status='BAYAR'
 ORDER BY tarikh DESC ";
 $result = mysqli_query($con,$sql);
 $semak=mysqli_num_rows($result);
-if (!empty ($semak)){
+if (!empty($semak)){
 ?>
 <table>
 <thead>
@@ -59,17 +59,16 @@ if (!empty ($semak)){
 <tbody>
 <?php
 while($infoD = mysqli_fetch_array($result)){
-$subtotal = $infoD[ 'harga'] * $infoD[ 'kuantiti'];
+$subtotal = $infoD['harga'] * $infoD['kuantiti'];
 $total += $subtotal;
 ?>
 <tr>
 <td><?php echo $sno; ?></td>
-<td><?php echo $infoD['tarikh']; ?><td>
+<td><?php echo $infoD['tarikh']; ?></td>
 <td><?php echo $infoD['namaProduk'];?></td>
 <td><?php echo $infoD['kuantiti']; ?></td>
 <td><?php echo $infoD['harga']; ?></td>
-<td><?php $jum1 = $subtotal; echo number_format($jum1, 2); ?>
-</td>
+<td><?php $jum1 = $subtotal; echo number_format($jum1, 2); ?></td>
 <?php $sno++; } ?>
 </tbody>
 </table>
