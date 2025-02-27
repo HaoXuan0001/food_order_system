@@ -11,7 +11,6 @@ $_SESSION['cart'] = [];
 ?>
 <!-- SUSUNAN -->
 <div class="row" >
-    111
 <!-- PANGGIL MENU --> 
 <div id="menu" >
 <?php include 'menu.php'; ?> 
